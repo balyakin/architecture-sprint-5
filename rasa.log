@@ -1,0 +1,31 @@
+2024-10-19 07:50:22 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2024-10-19 07:50:22 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2024-10-19 07:50:22 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2024-10-19 07:50:22 DEBUG    rasa.core.tracker_store  - Recreating tracker from sender id 'default'
+2024-10-19 07:50:22 DEBUG    rasa.core.processor  - Starting a new session for conversation ID 'default'.
+2024-10-19 07:50:22 DEBUG    rasa.core.processor  - Policy prediction ended with events '[]'.
+2024-10-19 07:50:22 DEBUG    rasa.core.processor  - Action 'action_session_start' ended with events '[<rasa.shared.core.events.SessionStarted object at 0x7fdbe5d4e5b0>, <rasa.shared.core.events.ActionExecuted object at 0x7fdbe5d4ea60>]'.
+2024-10-19 07:50:22 DEBUG    rasa.core.processor  - Current slot values:
+2024-10-19 07:50:22 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2024-10-19 07:50:22 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2024-10-19 07:50:22 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2024-10-19 07:50:23 DEBUG    rasa.core.tracker_store  - Tracker with sender_id 'default' stored to database
+2024-10-19 07:50:30 DEBUG    rasa.core.processor  - Received user message 'Привет' with intent '{'name': 'приветствие', 'confidence': 0.99}' and entities '[]'
+2024-10-19 07:50:30 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 3 events.
+2024-10-19 07:50:30 DEBUG    rasa.core.policies.memoization  - Current tracker state: [{}, {'user': {'intent': 'приветствие'}, 'prev_action': {'action_name': 'action_listen'}}]
+2024-10-19 07:50:30 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2024-10-19 07:50:30 DEBUG    rasa.core.policies.ted_policy  - TED predicted 'utter_greet' based on user intent.
+2024-10-19 07:50:30 DEBUG    rasa.core.processor  - Predicted next action 'utter_greet' with confidence 0.99.
+2024-10-19 07:50:30 DEBUG    rasa.core.processor  - Action 'utter_greet' ended with events '[BotUttered('Привет! Как я могу вам помочь?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_greet"}, 1648384235.934605)]'.
+2024-10-19 07:50:30 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2024-10-19 07:50:30 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2024-10-19 07:50:30 DEBUG    rasa.core.tracker_store  - Tracker with sender_id 'default' stored to database
+2024-10-19 07:50:35 DEBUG    rasa.core.processor  - Received user message 'Что такое микросервисная архитектура?' with intent '{'name': 'микросервисы', 'confidence': 0.95}' and entities '[]'
+2024-10-19 07:50:35 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 6 events.
+2024-10-19 07:50:35 DEBUG    rasa.core.policies.memoization  - Current tracker state: [{}, {'user': {'intent': 'микросервисы'}, 'prev_action': {'action_name': 'action_listen'}}]
+2024-10-19 07:50:35 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2024-10-19 07:50:35 DEBUG    rasa.core.policies.ted_policy  - TED predicted 'utter_microservices' based on user intent.
+2024-10-19 07:50:35 DEBUG    rasa.core.processor  - Predicted next action 'utter_microservices' with confidence 0.98.
+2024-10-19 07:50:35 DEBUG    rasa.core.processor  - Action 'utter_microservices' ended with events '[BotUttered('Микросервисная архитектура — это подход к разработке, когда приложение разделяется на независимые сервисы, взаимодействующие между собой.', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"utter_action": "utter_microservices"}, 1648384240.124792)]'.
+2024-10-19 07:50:35 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2024-10-19 07:50:35 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
